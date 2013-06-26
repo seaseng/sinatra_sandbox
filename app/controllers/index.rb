@@ -21,5 +21,11 @@ post '/cool_url' do
   puts "[LOG] Params: #{params.inspect}"
   @user_input = params[:user_input]
 
+  selection_hash = params.clone
+  selection_hash.shift
+
+  p "User selction"
+  p @user_selection = selection_hash.values
+
   erb :post_cool_url
 end

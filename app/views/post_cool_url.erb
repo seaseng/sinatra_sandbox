@@ -4,4 +4,12 @@
   <h2>Here it is:</h2>
     <p>You said: "<span id="user_says"><%= @user_input %></span>"</p>
   
+  <h2>Here are the selction you made from radio, check and combo boxes:</h2>
+  <ol>
+    
+    <% @user_selection.each do |t| %>
+
+    <%= erb :_user_inputs, { :locals => { :user_input => t } } %>
+    <% end %>
+  </ol>
 </div>
