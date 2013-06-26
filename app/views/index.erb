@@ -1,0 +1,70 @@
+<div class="container">
+  <h1>Index</h1>
+  
+
+  <form action="/cool_url" method="post">
+    <div class='text_enter' align='center'>
+      Express yourself, post something:
+      <br>
+      <input type="text" name="user_input">
+      <input type="submit" value="Say it!">
+    </div>
+  </form>
+
+  <br><br>
+
+  <form name="myform" action="/cool_url" method="POST">
+    <div class='text_enter' align="center">
+      This is outside the area<br><br>
+      <textarea cols="40" rows="5" name="user_input">
+        Now we are inside the area - which is nice.
+      </textarea>
+      <br>
+      <input type="submit" value="Submit Text">
+    </div>
+
+    
+      <div class="radiobuttons" align="center"><br>
+        <input type="radio" name="rb1" value="Milk"> Milk<br>
+        <input type="radio" name="rb2" value="Butter" checked> Butter<br>
+        <input type="radio" name="rb3" value="Cheese"> Cheese
+        <!-- <hr>
+        <input type="radio" name="group2" value="Water"> Water<br>
+        <input type="radio" name="group2" value="Beer"> Beer<br>
+        <input type="radio" name="group2" value="Wine" checked> Wine<br> -->
+      </div>
+    
+
+    
+      <div class="checkboxes" align="center"><br>
+        <input type="checkbox" name="cb1" value="Milk"> Milk<br>
+        <input type="checkbox" name="cb2" value="Butter" checked> Butter<br>
+        <input type="checkbox" name="cb3" value="Cheese"> Cheese<br>
+        <br>
+      </div>
+    
+
+    
+      <div class='combobox' align="center">
+        <select name="dropdown">
+          <option value="Milk">Fresh Milk</option>
+          <option value="Cheese">Old Cheese</option>
+          <option value="Bread">Hot Bread</option>
+        </select>
+      </div>
+
+      <input id='various_submit' type="submit" value="Send Text Box and Radio Button Values">
+
+    </form>
+
+
+  </div>
+
+
+
+<!-- 
+<div>
+  <input type="text" name="post[title]">
+  <input type="text" name="post[price]">
+  <textarea name="post[description]"></textarea>
+</div> -->
